@@ -19,10 +19,10 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         {/* Local Video Background for performance and CSP */}
         <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            loop 
-            muted 
+          <video
+            autoPlay
+            loop
+            muted
             playsInline
             className="w-full h-full object-cover"
           >
@@ -31,9 +31,17 @@ const Hero = () => {
         </div>
 
         {/* --- Multilayered Overlays for Depth & Theme Color --- */}
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 bg-[#811331]/30 mix-blend-overlay" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-[#811331]/20 to-black/40" />
+        <div className="absolute inset-0 bg-black/35" />
+
+        {/* Green color wash */}
+       <div className="absolute inset-0 bg-[#0f5132]/35 mix-blend-color" />
+
+<div className="absolute inset-0 bg-gradient-to-t 
+  from-black 
+  via-[#1fa36b]/20 
+  to-black/55" />
+
+
       </div>
 
       {/* --- Content Container --- */}
@@ -44,7 +52,7 @@ const Hero = () => {
           }`}>
           <div className="w-12 h-[1px] bg-white/30" />
           <span className="uppercase tracking-[0.6em] text-[10px] text-white/80 font-medium font-sans">
-            Estate Established 2004
+            Established in 2004
           </span>
           <div className="w-12 h-[1px] bg-white/30" />
         </div>
@@ -64,7 +72,7 @@ const Hero = () => {
             text-stone-100 leading-[1.1] 
             transition-all duration-[1500ms] delay-300 ease-[cubic-bezier(0.25,1,0.5,1)] ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-[120%] opacity-0'
             }`}>
-            WINE MAKERS
+            WINEMAKERS
           </span>
         </h1>
 

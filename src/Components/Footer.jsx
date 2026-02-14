@@ -25,7 +25,7 @@ const Footer = () => {
         { name: 'Red Wine', href: '/wines/red' },
         { name: 'White Wine', href: '/wines/white' },
         { name: 'Rosé Wine', href: '/wines/rose' },
-        { name: 'Beer', href: '/wines/beer' },
+        { name: 'Sparkling Wine', href: '/wines/beer' },
       ],
     },
     {

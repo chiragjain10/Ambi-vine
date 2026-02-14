@@ -45,7 +45,7 @@ const Header = () => {
           { name: 'Red Wine', href: '/wines/red' },
           { name: 'White Wine', href: '/wines/white' },
           { name: 'Rosé Wine', href: '/wines/rose' },
-          { name: 'Beer', href: '/wines/beer' },
+          { name: 'Sparkling Wine', href: '/wines/beer' },
         ],
       },
       { name: 'Events', href: '/events' },
@@ -58,9 +58,8 @@ const Header = () => {
     <div className="relative group py-2">
       <Link
         to={link.href || '#'}
-        className={`text-[11px] uppercase tracking-[0.2em] font-serif flex items-center gap-1 transition-colors ${
-          isScrolled ? 'text-stone-800' : 'text-white'
-        }`}
+        className={`text-[11px] uppercase tracking-[0.2em] font-serif flex items-center gap-1 transition-colors ${isScrolled ? 'text-stone-800' : 'text-white'
+          }`}
       >
         {link.name}
         {link.subLinks && (
@@ -93,11 +92,10 @@ const Header = () => {
     <>
       {/* ================= Header ================= */}
       <nav
-        className={`fixed w-full z-50 transition-all duration-500 ${
-          isScrolled
-            ? 'bg-white/95 backdrop-blur-md py-4 shadow-md'
-            : 'bg-transparent py-8'
-        }`}
+        className={`fixed w-full z-50 transition-all duration-500 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md py-4 shadow-md'
+          : 'bg-transparent py-8'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
 
@@ -121,15 +119,15 @@ const Header = () => {
           {/* Logo */}
           <div className="text-center flex-shrink-0">
             <Link to="/">
-              <h1
-                className={`text-xl md:text-3xl font-serif tracking-[0.2em] ${
-                  isScrolled ? 'text-stone-900' : 'text-white'
-                }`}
-              >
-                AMBI VINEYARDS
-              </h1>
+              <img
+                src={isScrolled ? "/img/logob.png" : "/img/logoc.png"}
+                alt="Logo"
+                className="w-28 md:w-32 h-auto transition-all duration-300"
+              />
             </Link>
           </div>
+
+
 
           {/* Desktop Right */}
           <div className="hidden lg:flex flex-1 justify-end items-center gap-8">
@@ -143,11 +141,10 @@ const Header = () => {
             <button
               type="button"
               onClick={() => navigate('/wishlist')}
-              className={`relative inline-flex items-center justify-center w-8 h-8 rounded-full border transition ${
-                isScrolled
-                  ? 'border-stone-200 text-stone-800 hover:bg-stone-100'
-                  : 'border-white/30 text-white hover:bg-white/10'
-              }`}
+              className={`relative inline-flex items-center justify-center w-8 h-8 rounded-full border transition ${isScrolled
+                ? 'border-stone-200 text-stone-800 hover:bg-stone-100'
+                : 'border-white/30 text-white hover:bg-white/10'
+                }`}
             >
               <Heart
                 size={14}
@@ -168,9 +165,8 @@ const Header = () => {
 
       {/* ================= Mobile Sidebar ================= */}
       <div
-        className={`fixed inset-0 z-[60] bg-stone-50 transform transition-transform duration-700 ease-in-out ${
-          mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed inset-0 z-[60] bg-stone-50 transform transition-transform duration-700 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
         style={{ height: '100dvh' }}
       >
         <div className="h-full flex flex-col p-8 overflow-y-auto overscroll-contain">

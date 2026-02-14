@@ -25,7 +25,7 @@ const CATEGORIES = [
   },
   {
     id: 4,
-    name: "Beer",
+    name: "Sparkling",
     description: "Artisan & Cold",
     details: "Small-batch craft ales from our valley.",
     image: "https://res.cloudinary.com/dcgcuvk02/image/upload/v1770556159/bold_img_ugzwqk.jpg"

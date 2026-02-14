@@ -22,7 +22,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Rhône Valley (France); now widely grown in Australia, South Africa, and worldwide",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r4.jpeg"
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Spain",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r10.jpeg"
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Bordeaux (France), Rioja (Spain), Italy; now grown worldwide",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r7.jpeg"
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Bordeaux (France) – Cabernet; Rhône Valley (France) – Shiraz; now grown worldwide",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r6.jpeg"
   },
   {
     id: 5,
@@ -89,7 +89,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Bordeaux (France) – Cabernet; Rhône Valley (France) – Shiraz; now grown worldwide",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r8.jpeg"
   },
   {
     id: 6,
@@ -103,7 +103,7 @@ export const WINE_LIST = [
     sizes: ["750ml"],
     origin: "Blend of Cabernet Sauvignon, Shiraz & Merlot",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r5.jpeg"
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const WINE_LIST = [
     abv: "14.8%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    // image: "../img/bottle/r5.jpeg"
   },
   {
     id: 14,
@@ -131,7 +131,7 @@ export const WINE_LIST = [
     abv: "13.0%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r1.png"
   },
   {
     id: 16,
@@ -145,7 +145,7 @@ export const WINE_LIST = [
     abv: "14.6%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r2.jpeg"
   },
   {
     id: 17,
@@ -159,7 +159,7 @@ export const WINE_LIST = [
     abv: "14.8%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    // image: "../img/bottle/r3.jpeg"
   },
   {
     id: 18,
@@ -173,7 +173,7 @@ export const WINE_LIST = [
     abv: "14.4%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r3.jpeg"
   },
   {
     id: 19,
@@ -187,7 +187,7 @@ export const WINE_LIST = [
     abv: "14.8%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/r9.jpeg"
   },
 
   // --- WHITE WINES ---
@@ -210,7 +210,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "Loire Valley (France); also found across South Africa, Australia, Argentina, United States, and New Zealand",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1559158068-9ad6a7c717cf?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/w3.jpeg"
   },
   {
     id: 13,
@@ -224,7 +224,7 @@ export const WINE_LIST = [
     abv: "14.8%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1559158068-9ad6a7c717cf?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/w2.jpeg"
   },
   {
     id: 15,
@@ -238,7 +238,7 @@ export const WINE_LIST = [
     abv: "12.6%",
     sizes: ["375ml", "750ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1559158068-9ad6a7c717cf?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/w4.png"
   },
 
   // --- ROSÉ WINES ---
@@ -262,7 +262,7 @@ export const WINE_LIST = [
     sizes: ["375ml", "750ml"],
     origin: "South of France",
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/ro2.jpeg"
   },
 
   // --- BEER (SPRITZERS) ---
@@ -279,7 +279,7 @@ export const WINE_LIST = [
     abv: "9.0%",
     sizes: ["330ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/s1.jpeg"
   },
   {
     id: 10,
@@ -294,7 +294,7 @@ export const WINE_LIST = [
     abv: "14.2%",
     sizes: ["330ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/s2.jpeg"
   },
   {
     id: 11,
@@ -309,7 +309,7 @@ export const WINE_LIST = [
     abv: "10.0%",
     sizes: ["330ml"],
     price: "Ask for Price",
-    image: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=800"
+    image: "../img/bottle/s3.jpeg"
   }
 ];
 
@@ -319,24 +319,24 @@ export const CATEGORY_INFO = {
     title: "Red Wines",
     subtitle: "Robust & Earthy Selection",
     description: "Our red wine collection showcases the depth and complexity of carefully selected varietals, each expressing the unique character of our terroir through patient aging and traditional winemaking techniques.",
-    heroImage: "https://images.unsplash.com/photo-1510850402719-e4c78a483946?auto=format&fit=crop&q=80&w=2070"
+    heroImage: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmVkJTIwd2luZXxlbnwwfHwwfHx8MA%3D%3D"
   },
   white: {
     title: "White Wines",
     subtitle: "Crisp & Mineral Selection",
     description: "From bright, citrus-driven expressions to rich, barrel-fermented styles, our white wines capture the freshness and elegance of carefully tended vineyards.",
-    heroImage: "https://images.unsplash.com/photo-1559158068-9ad6a7c717cf?auto=format&fit=crop&q=80&w=2070"
+    heroImage: "https://plus.unsplash.com/premium_photo-1723741352223-312276e72b15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdoaXRlJTIwd2luZXxlbnwwfHwwfHx8MA%3D%3D"
   },
   rose: {
     title: "Rosé Wines",
     subtitle: "Fresh & Floral Selection",
     description: "Delicate and refreshing, our rosé collection offers the perfect balance of fruit and acidity, crafted for moments of effortless elegance.",
-    heroImage: "https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?auto=format&fit=crop&q=80&w=2070"
+    heroImage: "https://plus.unsplash.com/premium_photo-1686904396892-7f09ce385215?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cm9zZSUyMHdpbmV8ZW58MHx8MHx8fDA%3D"
   },
   beer: {
     title: "Spritzers & Beers",
     subtitle: "Fruity & Refreshing",
     description: "Vibrant and playful, our collection brings together fresh fruit flavors and sparkling zest for the perfect low-alcohol refreshment.",
-    heroImage: "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=2070"
+    heroImage: "https://images.unsplash.com/photo-1652862730477-782a6dcb2385?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVlciUyMHdpbmV8ZW58MHx8MHx8fDA%3D"
   }
 };
