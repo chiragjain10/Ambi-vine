@@ -4,17 +4,17 @@ const Preloader = () => {
     const [progress, setProgress] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
     const [phase, setPhase] = useState('enter'); // 'enter', 'hold', 'exit'
-    
+
     const brandColor = '#811331';
-    
+
     useEffect(() => {
         let animationFrame;
         let startTime = null;
-        
+
         const animate = (timestamp) => {
             if (!startTime) startTime = timestamp;
             const elapsed = timestamp - startTime;
-            
+
             let newProgress;
             if (elapsed < 800) {
                 newProgress = (elapsed / 800) * 40;
@@ -26,9 +26,9 @@ const Preloader = () => {
                 newProgress = 95 + ((elapsed - 2500) / 500) * 5;
                 newProgress = Math.min(newProgress, 100);
             }
-            
+
             setProgress(newProgress);
-            
+
             if (elapsed < 1200) {
                 setPhase('enter');
             } else if (elapsed < 2800) {
@@ -36,17 +36,17 @@ const Preloader = () => {
             } else {
                 setPhase('exit');
             }
-            
+
             if (elapsed < 3200) {
                 animationFrame = requestAnimationFrame(animate);
             } else {
                 setTimeout(() => setIsVisible(false), 500);
             }
         };
-        
+
         animationFrame = requestAnimationFrame(animate);
         document.body.style.overflow = 'hidden';
-        
+
         return () => {
             if (animationFrame) cancelAnimationFrame(animationFrame);
             document.body.style.overflow = 'unset';
@@ -65,30 +65,39 @@ const Preloader = () => {
                 {/* Radial Vignette for depth */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.4)_100%)]" />
             </div>
-            
+
             {/* Texture Overlay */}
             <div className={`
                 absolute inset-0 opacity-[0.03] pointer-events-none
                 ${phase === 'exit' ? 'opacity-0' : ''}
                 transition-opacity duration-1000
             `} style={{ backgroundImage: `url("https://www.transparenttextures.com/patterns/asfalt-dark.png")` }} />
-            
+
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center w-full px-6">
-                
+
                 {/* Brand Logo Section */}
-                <div className={`
-                    text-center transition-all duration-1000 ease-out
-                    ${phase === 'enter' ? 'translate-y-10 opacity-0' : 'translate-y-0 opacity-100'}
-                    ${phase === 'exit' ? '-translate-y-12 opacity-0' : ''}
-                `}>
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-light tracking-[0.2em] mb-2">
-                        AMBI VINES
-                    </h1>
-                    <p className="text-[10px] md:text-xs tracking-[0.6em] text-white/60 uppercase font-light">
-                        Estate • Napa Valley • Est. 1924
-                    </p>
-                    
+                <div
+                    className={`
+    text-center transition-all duration-1000 ease-out
+    ${phase === 'enter' ? 'translate-y-10 opacity-0' : 'translate-y-0 opacity-100'}
+    ${phase === 'exit' ? '-translate-y-12 opacity-0' : ''}
+  `}
+                >
+                    {/* Logo instead of title */}
+                    <img
+                        src="/img/logoc.png"
+                        alt="Ambi Vines Logo"
+                        className="
+      mx-auto
+      mb-3
+      w-40 md:w-56 lg:w-64
+      transition-all duration-1000 ease-out
+    "
+                    />
+
+                  
+
                     {/* Elegant Divider */}
                     <div className="flex items-center justify-center mt-8 gap-4">
                         <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-white/30" />
@@ -110,7 +119,7 @@ const Preloader = () => {
 
                     {/* Progress Bar */}
                     <div className="relative h-[2px] w-full bg-white/10 overflow-hidden">
-                        <div 
+                        <div
                             className="absolute left-0 top-0 h-full bg-white transition-all duration-300 ease-out"
                             style={{ width: `${progress}%` }}
                         >
